@@ -31,3 +31,17 @@ y
 l <- list(a= 2:7, b=7, c=4)
 l
 l[[3]]
+
+#Reading and writing files
+data <- read.table("Cells.txt",header= T) 
+head(data)
+summary (data)
+plot(data$CD4, data$CD8)
+
+dataL <- readLines(con = "Cells.txt", )
+dataL
+write.table(data, file = "CellsEdited.txt")
+
+dataEdited <- read.table("CellsEdited.txt")
+head(dataEdited)
+
