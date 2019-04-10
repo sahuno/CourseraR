@@ -19,3 +19,14 @@ d <- a+b #This produces normal addition and not only matix
 
 e <- a %*%b  #This is how to c orrectly multiply matices ;) 
 e
+
+
+x <- matrix(rep(67, 10), 2,5)
+x
+y <- x + 5 * 3
+y
+
+z <- x +y
+z
+k <- as.integer(z)
+k
