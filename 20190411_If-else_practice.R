@@ -3,12 +3,12 @@
 #using if and else to determine which teams win
 welcome <- readline(prompt = "Hey, would you want to play the which team team wins game? Enter Y/N to continue: ")
 
-if (welcome == "Y") {
+while (welcome == "Y") {
   scoreA <- readline(prompt = "Enter the recent score for team A: ")
   scoreA <- as.integer(scoreA)
   print(paste("Team A has", scoreA, "scores"))
   
-  scoreB <- readline(prompt = "Enter the recent score for team B")
+  scoreB <- readline(prompt = "Enter the recent score for team B: ")
   scoreB <- as.integer(scoreB)
   
   print(paste("Team B has", scoreB, "scores"))
@@ -18,7 +18,11 @@ if (welcome == "Y") {
   } else {
     print(paste("Hurray Team B wins"))
   }
-}
+} 
+
+##else {
+  ##print(paste("OOps! it appears you entered an incorrect response, please check your input! Enter Y or N to continue!"))
+##}
   
 
   
